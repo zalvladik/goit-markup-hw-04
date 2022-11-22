@@ -116,8 +116,7 @@ body {
 /*hero-----------------------------------------------------------*/
 .hero {
     margin: auto;
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
     background-image:
     linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
@@ -168,16 +167,12 @@ body {
 }
 .list-title{
     display:flex;
-    justify-content: space-between;
 }
 .list-title > .item{
     width: 270px;
-    height: 224px;
 }
-.list-title > .item:first-child,
-.list-title > .item:last-child{
-    width: 270px;
-    height: 248px;
+.list-title > .item+.item{
+    margin-left:30px
 }
 .title {
     color:var(--title-text-color);
@@ -194,13 +189,21 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.icon-attention,
-.icon-punctuality,
-.icon-plan,
-.icon-technology{
-    height: 120px;
+.icon-attention{
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.icon-info{
+    display: flex;
     width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
     margin-bottom: 30px;
+    border-radius: 4px;
 }
 /*Чим ми займаємось----------------------------------------------*/
 .what-we-do{
@@ -282,11 +285,10 @@ body {
     height:20px;
     fill:currentColor;
 }
-.social-button{
+.social-link{
     display: flex;
     width: 40px;
     height: 40px;
-    padding:0px;
     border:none;
     border-radius: 50%;
     color:#AFB1B8;
@@ -294,8 +296,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.social-button:hover,
-.social-button:focus{
+.social-link:hover,
+.social-link:focus{
     color:#FFFFFF;
     background-color: var(--button-color);
 }
@@ -310,27 +312,29 @@ body {
 }
 .client-list{
     display:flex;
-    justify-content: space-between;
     margin-top:50px;
+}
+.client-list > .item+.item{
+    margin-left:30px;
 }
 .icon-client{
     fill:currentColor;
     width: 106px;
     height: 60px;
 }
-.client-button{
+.client-link{
+    display: flex;
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    justify-content: center;
-    align-items: center;
     color:#AFB1B8;
     background:#FFFFFF;
+    justify-content: center;
+    align-items: center;
 }
-.client-button:hover,
-.client-button:focus{
+.client-link:hover,
+.client-link:focus{
     color:var(--button-color);
     border-color:var(--button-color);
 }
