@@ -274,11 +274,13 @@ body {
     display: flex;
     margin-top: 16px;
     padding: 0px 32px;
-    justify-content: space-between;
 }
 .social-list > .item {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
+}
+.social-list > .item+.item{
+    margin-left:10px;
 }
 .social{
     width:20px; 
@@ -287,8 +289,8 @@ body {
 }
 .social-link{
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     border:none;
     border-radius: 50%;
     color:#AFB1B8;
@@ -314,6 +316,10 @@ body {
     display:flex;
     margin-top:50px;
 }
+.client-list > .item{
+    width: 170px;
+    height: 92px;
+}
 .client-list > .item+.item{
     margin-left:30px;
 }
@@ -324,8 +330,8 @@ body {
 }
 .client-link{
     display: flex;
-    width: 170px;
-    height: 92px;
+    width:100%;
+    height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color:#AFB1B8;
@@ -393,13 +399,13 @@ body {
 }
 .footer-social{
     display: flex;
-    width: 206px;
-    height: 44px;
-    justify-content: space-between;
+}
+.footer-social > .item+.item{
+    margin-left:10px;
 }
 .footer-social > .item {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
 }
 .social{
     width:20px; 
@@ -408,8 +414,8 @@ body {
 }
 .footer-button{
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     padding:0px;
     border:none;
     border-radius: 50%;
