@@ -480,7 +480,7 @@ body {
 .panorama-list > .item {
     width: 370px;
     height: 404px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #EEE;
     margin:15px;
 }
 .panorama-list > .item:hover,
